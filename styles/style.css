@@ -1,0 +1,232 @@
+@import url(reset.css);
+/*👉@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');👈*/
+
+/*👉 PADRÃO DE FONTE DO PROJETO 👈*/
+/* 
+Títulos do projeto: Exo bold;
+Texto: Exo regular;
+Botões: Exo.
+*/
+
+/*👉Padrão de fonte👈*/
+@font-face {
+font-family: 'Exo Regular';
+font-style: normal ;
+font-weight: 300 ;
+src: url(../fonts/Exo-Regular.otf) format("opentype"),
+url(../fonts/.ttf) format("truetype"),
+url(../fonts/.woff2) format("woff2"),
+url(../fonts/.woff) format("woff");
+font-display: swap;
+}
+
+@font-face {
+font-family: 'Exo Italic';
+font-style: italic ;
+font-weight: 300 ;
+src: url(../fonts/.otf) format("opentype"),
+url(../fonts/.ttf) format("truetype"),
+url(../fonts/.woff2) format("woff2"),
+url(../fonts/.woff) format("woff");
+font-display: swap;
+}
+
+
+@font-face {
+font-family: 'Exo Bold';
+font-style: normal ;
+font-weight:bold ;
+src: url(../fonts/Exo-Bold.otf) format("opentype"),
+url(../fonts/.ttf) format("truetype"),
+url(../fonts/.woff2) format("woff2"),
+url(../fonts/.woff) format("woff");
+font-display: swap;
+}
+
+@font-face {
+font-family: 'Exo Bold Italic';
+font-style: italic ;
+font-weight: bold ;
+src: url(../fonts/Exo-Bold-Italic.otf) format("opentype"),
+url(../fonts/.ttf) format("truetype"),
+url(../fonts/.woff2) format("woff2"),
+url(../fonts/.woff) format("woff");
+font-display: swap;
+}
+
+
+/*👉PADRÃO DE CORES DO PROJETO👈*/
+:root{
+    --cinzaClaro:#efefef ;
+    --cincaEscuro:#535353;
+    --azul:#3ea1e3; 
+    --azulMedio:#00a9cb;
+    --azulEscuro:#04849d;
+    --verde:#94c651;
+    --branco:#fff;
+
+    --textoBold:'Exo Bold';
+    --textoBoldItalico:'Exo Bold Italic';
+    --textoRegular:'Exo Regular';
+    --textoItalico: 'Exo Italic';
+
+    --tamanhoPP:0.8em;
+    --tamanhoP:1em;
+    --tamanhoM:1.5em;
+    --tamanhoG:2em;
+
+    --ver: 1px solid red;
+}
+
+/*👉CSS Geral👈*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--textoRegular);
+    font-size:var(--tamanhoP);   
+    line-height: 1.5em;
+    overflow-x: hidden;
+    hyphens: none;
+}
+
+strong{
+    font-weight: bold;
+}
+em{
+    font-style: italic;
+}
+
+p{
+    margin: 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 1em 0 0.5em 0;
+}
+
+p, ul li, ol, li,
+h1, h2, h3, h4, h5, h6{
+    hyphens: none;
+}
+figure {
+    margin: 1em 0.5em;
+    display: table;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    hyphens: none;
+}
+
+/*👉CSS CLASSES👈*/
+.container{
+    width: 80ch;
+    max-width: 100%;
+    margin: 0 auto;
+   
+}
+
+
+
+/* Área do TOPO */
+.areaTopo {
+    background: var(--branco);
+}
+.logoEmpresa {
+}
+.infoContatoTop {
+}
+.infoRedesSociais {
+}
+.navegacao {
+}
+
+/* Área do Banner */
+.areaBanner {
+    background: var(--cinzaClaro);
+}
+
+/* Área do Conteúdo */
+.areaConteudo {
+    
+}
+.tx_quemsomos {
+    background: var(--cincaEscuro);
+}
+
+/* Área do Cliente */
+.areaCliente {
+    background: var(--azul);
+}
+
+/* Área do Rodapé */
+.areaMapa {
+}
+.areaRodape {
+    background:var(--branco);
+}
+.direitosUso {
+    background: var(--cincaEscuro);
+    border-top: 3px solid var(--azul);
+    color: var(--branco);
+    padding: 0.5em ;
+
+}
+.direitosUso  address{
+    text-align: center;
+}
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 360px) and (max-width: 767px) { 
+   
+        
+    
+/* Área do TOPO */
+/* Área do Banner */
+/* Área do Conteúdo */
+/* Área do Cliente */
+/* Área do Rodapé */
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Área do TOPO */
+/* Área do Banner */
+/* Área do Conteúdo */
+/* Área do Cliente */
+/* Área do Rodapé */
+ }
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Área do TOPO */
+/* Área do Banner */
+/* Área do Conteúdo */
+/* Área do Cliente */
+/* Área do Rodapé */
+ }
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { }
+
+
