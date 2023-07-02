@@ -10,70 +10,70 @@ Botões: Exo.
 
 /*👉Padrão de fonte👈*/
 @font-face {
-font-family: 'Exo Regular';
-font-style: normal ;
-font-weight: 300 ;
-src: url(../fonts/Exo-Regular.otf) format("opentype"),
-url(../fonts/.ttf) format("truetype"),
-url(../fonts/.woff2) format("woff2"),
-url(../fonts/.woff) format("woff");
-font-display: swap;
+    font-family: 'Exo Regular';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Exo-Regular.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
 }
 
 @font-face {
-font-family: 'Exo Italic';
-font-style: italic ;
-font-weight: 300 ;
-src: url(../fonts/.otf) format("opentype"),
-url(../fonts/.ttf) format("truetype"),
-url(../fonts/.woff2) format("woff2"),
-url(../fonts/.woff) format("woff");
-font-display: swap;
+    font-family: 'Exo Italic';
+    font-style: italic;
+    font-weight: 300;
+    src: url(../fonts/.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
 }
 
 
 @font-face {
-font-family: 'Exo Bold';
-font-style: normal ;
-font-weight:bold ;
-src: url(../fonts/Exo-Bold.otf) format("opentype"),
-url(../fonts/.ttf) format("truetype"),
-url(../fonts/.woff2) format("woff2"),
-url(../fonts/.woff) format("woff");
-font-display: swap;
+    font-family: 'Exo Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/Exo-Bold.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
 }
 
 @font-face {
-font-family: 'Exo Bold Italic';
-font-style: italic ;
-font-weight: bold ;
-src: url(../fonts/Exo-Bold-Italic.otf) format("opentype"),
-url(../fonts/.ttf) format("truetype"),
-url(../fonts/.woff2) format("woff2"),
-url(../fonts/.woff) format("woff");
-font-display: swap;
+    font-family: 'Exo Bold Italic';
+    font-style: italic;
+    font-weight: bold;
+    src: url(../fonts/Exo-Bold-Italic.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
 }
 
 
 /*👉PADRÃO DE CORES DO PROJETO👈*/
-:root{
-    --cinzaClaro:#efefef ;
-    --cinzaEscuro:#535353;
-    --azul:#3ea1e3; 
-    --azulMedio:#00a9cb;
-    --azulEscuro:#04849d;
-    --verde:#94c651;
-    --branco:#fff;
+:root {
+    --cinzaClaro: #efefef;
+    --cinzaEscuro: #535353;
+    --azul: #3ea1e3;
+    --azulMedio: #00a9cb;
+    --azulEscuro: #04849d;
+    --verde: #94c651;
+    --branco: #fff;
 
-    --textoBold:'Exo Bold';
-    --textoBoldItalico:'Exo Bold Italic';
-    --textoRegular:'Exo Regular';
+    --textoBold: 'Exo Bold';
+    --textoBoldItalico: 'Exo Bold Italic';
+    --textoRegular: 'Exo Regular';
     --textoItalico: 'Exo Italic';
 
-    --tamanhoPP:0.8em;
-    --tamanhoP:1em;
-    --tamanhoM:1.3em;
-    --tamanhoG:2em;
+    --tamanhoPP: 0.8em;
+    --tamanhoP: 1em;
+    --tamanhoM: 1.3em;
+    --tamanhoG: 2em;
 
     --ver: 1px solid red;
 }
@@ -90,33 +90,44 @@ html {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: var(--textoRegular);
-    font-size:var(--tamanhoP);   
+    font-size: var(--tamanhoP);
     line-height: 1.5em;
     overflow-x: hidden;
     hyphens: none;
 }
 
-strong{
+strong {
     font-weight: bold;
 }
-em{
+
+em {
     font-style: italic;
 }
 
-p{
+p {
     margin: 1em 0;
 }
+
 /*👉
 h1, h2, h3, h4, h5, h6{
     margin: 1em 0 0.5em 0;
 }👈*/
 
-p, ul li, ol, li,
-h1, h2, h3, h4, h5, h6{
+p,
+ul li,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     hyphens: none;
 }
+
 figure {
     margin: 1em 0.5em;
     display: table;
@@ -135,12 +146,12 @@ figcaption {
 }
 
 /*👉CSS CLASSES👈*/
-.container{
+.container {
     width: 90ch;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1em;
-   
+
 }
 
 
@@ -150,53 +161,65 @@ figcaption {
     background: var(--branco);
 }
 
-.areaTopo header{
+.areaTopo header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 1em;
 
 }
-.logoEmpresa {
-}
-.infoContatoTop, .infoRedesSociais{
+
+.logoEmpresa {}
+
+.infoContatoTop,
+.infoRedesSociais {
     margin: 1em 0;
 }
+
 .infoContatoTop ul {
     display: flex;
     flex-direction: row;
     gap: 0.8em;
 }
-.infoContatoTop ul li:first-child{
+
+.infoContatoTop ul li:first-child {
     background: url(../imagens/estrutura/ico_email.jpg) center left no-repeat;
-    padding: 0 0 0 2em;          
+    padding: 0 0 0 2em;
 }
-.infoContatoTop ul li:last-child{
+
+.infoContatoTop ul li:last-child {
     background: url(../imagens/estrutura/ico_whatsapp.jpg) center left no-repeat;
-    padding: 0 0 0 1.8em;    
+    padding: 0 0 0 1.8em;
 }
+
 .infoRedesSociais ul {
     display: flex;
     flex-direction: row;
     gap: 0.8em;
 }
+
 .navegacao ul {
     display: flex;
     gap: 1em;
 }
-.navegacao ul li{
+
+.navegacao ul li {
     border-bottom: 3px solid transparent;
-    
+
 }
-.navegacao ul li:hover{
+
+.navegacao ul li:hover {
     border-bottom: 3px solid var(--verde);
 }
-.navegacao ul li:active a,.navegacao ul li a.ativo {
+
+.navegacao ul li:active a,
+.navegacao ul li a.ativo {
     color: var(--azul);
 }
+
 .navegacao ul a {
     color: var(--cinzaEscuro);
     font-weight: bold;
@@ -206,55 +229,58 @@ figcaption {
 
 /* Área do Banner */
 .areaBanner {
-    background:url(../imagens/estrutura/bg_banner_topo_rep.jpg) top left repeat-x ;
+    background: url(../imagens/estrutura/bg_banner_topo_rep.jpg) top left repeat-x;
     background-color: var(--cinzaClaro);
     background-size: 10px;
     margin-top: -2em;
 
 }
+
 .banner {
-    background: url(../imagens/estrutura/bg_banner_topo.jpg) top center no-repeat; 
+    background: url(../imagens/estrutura/bg_banner_topo.jpg) top center no-repeat;
     background-size: 130%;
 
 }
 
 .areaBanner2 {
-  
+
     background-color: var(--azul);
     background-size: 10px;
-  
+
 
 }
+
 .areaBanner2 .banner {
-    padding:1em 0  0 0;
-    background: url(../imagens/estrutura/bg_blue_botton.jpg) top center no-repeat
-    ; 
-    background-position-y:-2px ;
+    padding: 1em 0 0 0;
+    background: url(../imagens/estrutura/bg_blue_botton.jpg) top center no-repeat;
+    background-position-y: -2px;
     background-size: 130%;
 
 }
-.banner figure img{
+
+.banner figure img {
     width: 100%;
 }
 
 /* Área do Conteúdo */
-.areaConteudo {
-    
-}
+.areaConteudo {}
+
 .grupoInicial {
     background: var(--cinzaEscuro);
     padding: 1em 0;
     color: var(--branco);
 }
-.sobreGrupo{
+
+.sobreGrupo {
     border-bottom: 3px solid var(--verde);
     font-size: var(--tamanhoM);
     font-weight: bold;
     color: var(--branco);
-    padding: 1em 0 0 0 ;
+    padding: 1em 0 0 0;
     margin: 0 0 0.5em 0;
     width: max-content;
 }
+
 .tx_quemsomos {
     background: var(--cinzaEscuro);
 }
@@ -265,21 +291,24 @@ figcaption {
     font-size: var(--tamanhoM);
     font-weight: bold;
     color: var(--cinzaEscuro);
-    padding: 1em 0 0 0 ;
+    padding: 1em 0 0 0;
     margin: 0 0 1em 0;
     width: max-content;
 }
+
 .servicosPage {
     background: var(--cinzaClaro);
     padding: 0 0 2em 0;
 }
-.boxServico .box{
+
+.boxServico .box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+
     gap: 1em;
 }
+
 .boxServico .box a {
     display: flex;
     flex-direction: column;
@@ -288,15 +317,17 @@ figcaption {
     background: var(--branco);
     border-radius: 0.5em;
     border: 2px solid var(--azul);
-    padding:0.1em 0.5em;
+    padding: 0.1em 0.5em;
     text-decoration: none;
     color: var(--cinzaEscuro);
     width: 262px;
 }
-.boxServico .box a figure figcaption{
+
+.boxServico .box a figure figcaption {
     margin: 0.5em 0 0 0;
-  
+
 }
+
 .saibaMais {
     background: url(../imagens/estrutura/bt_saiba.png) center center no-repeat;
     background-size: contain;
@@ -307,10 +338,11 @@ figcaption {
     width: max-content;
     padding: 0.5em 1em 0.5em 2.2em;
     height: 40px;
-    
+
 
 }
-.saibaMais:hover{
+
+.saibaMais:hover {
     background: url(../imagens/estrutura/bt_saiba2.png) center center no-repeat;
     background-size: contain;
     color: var(--branco);
@@ -322,61 +354,168 @@ figcaption {
     height: 40px;
 }
 
+/* Page servico especifico */
+.pageServicoEspe {
+    background: var(--cinzaClaro);
+    padding: 1em 0;
+}
+
+.ti_servico {
+    border-bottom: 3px solid var(--verde);
+    font-size: var(--tamanhoG);
+    font-weight: bold;
+    color: var(--cinzaEscuro);
+    padding: 1em 0 0.2em 0;
+    margin: 0 0 1em 0;
+    width: max-content;
+}
+
+.perguntas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.perguntas div {
+    width: 300px;
+
+}
+
+.perguntas div h2 {
+    border-bottom: 3px solid var(--azul);
+    font-size: var(--tamanhoM);
+    font-weight: bold;
+    font-style: italic;
+    color: var(--cinzaEscuro);
+    padding: 1em 0 0.2em 0;
+    margin: 0 0 0.5em 0;
+    width: max-content;
+}
+
+.especifica {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+
+}
+
+.especifica figure {
+    width: 30%;
+}
+
+.especifica p {
+    width: 50%;
+}
+
+/* Page sobre */
+.sobre {
+    display: flex;
+    gap: 1em;
+}
+
+.sobre h1,
+.sobre h2 {
+    border-bottom: 3px solid var(--azul);
+    font-size: var(--tamanhoM);
+    font-weight: bold;
+    font-style: italic;
+    color: var(--cinzaEscuro);
+    padding: 1em 0 0.2em 0;
+    margin: 0 0 0.5em 0;
+    width: max-content;
+}
+
+.box_azul {
+    background: var(--azul);
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em 0;
+    color: var(--branco);
+    text-align: justify;
+}
+
+.li_profissionais {
+    list-style: disc;
+    margin: 0 0 0 1em;
+}
+
+.whatsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    right: 40px;
+    background: url(../imagens/estrutura/ico_whatsapp_verde.jpg) center center no-repeat var(--cinzaEscuro);
+
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
 /* Área de Serviços */
 .areaServicos {
-background:  var(--branco);
+    background: var(--branco);
 }
+
 .areaServicos .container {
     background: url(../imagens/estrutura/bg_footer_m.jpg) top center no-repeat;
-    background-position-y:-3px ;
+    background-position-y: -3px;
     background-size: contain;
-   
+
 }
 
-.areaServicos .container>h2{
+.areaServicos .container>h2 {
     border-bottom: 3px solid var(--verde);
-font-size: var(--tamanhoM);
-font-weight: bold;
-color: var(--cinzaEscuro);
-padding: 1em 0 0 0 ;
-margin: 0 0 0.5em 0;
-width: max-content;
+    font-size: var(--tamanhoM);
+    font-weight: bold;
+    color: var(--cinzaEscuro);
+    padding: 1em 0 0 0;
+    margin: 0 0 0.5em 0;
+    width: max-content;
 }
 
-.boxCateServicos {
-}
+.boxCateServicos {}
 
 
 /* Área do Cliente */
 .areaCliente {
     background: var(--azul);
 }
-.areaCliente .container{
+
+.areaCliente .container {
     padding: 1em;
 }
-.areaCliente .container>h3{
-border-bottom: 3px solid var(--verde);
-font-size: var(--tamanhoM);
-font-weight: bold;
-color: var(--branco);
-padding: 1em 0 0 0 ;
-margin: 0 0 0.5em 0;
-width: max-content;
+
+.areaCliente .container>h3 {
+    border-bottom: 3px solid var(--verde);
+    font-size: var(--tamanhoM);
+    font-weight: bold;
+    color: var(--branco);
+    padding: 1em 0 0 0;
+    margin: 0 0 0.5em 0;
+    width: max-content;
 }
+
 .logoClientes {
     display: flex;
     flex-direction: row;
-  
+
     gap: 1em;
     margin: 1em 0;
 }
 
 
 /* Área do Rodapé */
-.areaMapa {
-}
+.areaMapa {}
+
 .areaRodape {
-    background:var(--branco);
+    background: var(--branco);
 }
 
 
@@ -388,23 +527,24 @@ width: max-content;
     padding: 1em 0;
 }
 
-.infoGeralContato h3{
+.infoGeralContato h3 {
     border-bottom: 3px solid var(--azul);
     font-size: var(--tamanhoM);
     font-weight: bold;
     color: var(--cinzaEscuro);
-    padding: 1em 0 0 0 ;
+    padding: 1em 0 0 0;
     margin: 0 0 0.5em 0;
     width: max-content;
 }
 
 .celular {
     background: url(../imagens/estrutura/ico_whatsapp.jpg) center left no-repeat;
-    padding:  0 0 0 28px;
+    padding: 0 0 0 28px;
 }
+
 .email {
     background: url(../imagens/estrutura/ico_email.jpg) center left no-repeat;
-    padding:  0 0 0 28px;
+    padding: 0 0 0 28px;
 }
 
 
@@ -412,17 +552,18 @@ width: max-content;
 .endereco {
     background: url(../imagens/estrutura/ico_local.jpg) center left no-repeat;
     background-size: contain;
-    padding:  0 0 0 28px;
+    padding: 0 0 0 28px;
 }
 
 .direitosUso {
     background: var(--cinzaEscuro);
     border-top: 3px solid var(--azul);
     color: var(--branco);
-    padding: 0.5em ;
+    padding: 0.5em;
 
 }
-.direitosUso  address{
+
+.direitosUso address {
     text-align: center;
 }
 
@@ -432,94 +573,102 @@ width: max-content;
 /* Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap*/
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 360px) and (max-width: 767px) { 
+@media (min-width: 360px) and (max-width: 767px) {
 
-    
-/* Área do TOPO */
-.areaTopo header {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-.logoEmpresa img{
-    width:200px ;
-}
-.infoContatoTop ul {
-    display: flex;
-    flex-direction: row;
- 
-    gap: 0.8em;
-}
-.infoContatoTop ul li:first-child {
-    background: none;
-    padding: 0 0 0 0em;
-  }
 
-  .infoRedesSociais ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 1em;
-  }
-  .navegacao{
-    margin-bottom: 1em;
-  }
-/* Área do Banner */
-/* Área do Conteúdo */
-/* Área do Cliente */
-.logoClientes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    gap: 0.5;
-    margin: 1em 0;
-}
-.logoClientes li{
-    width: 90%;
-}
-.logoClientes li img{
-    width: 100%;
-}
-/* Área do Rodapé */
+    /* Área do TOPO */
+    .areaTopo header {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
-.infoGeralContato {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 1em;
-    padding: 1em 0;
-}
+    .logoEmpresa img {
+        width: 200px;
+    }
 
-.endereco {
-    background: none;
-    background-size: contain;
-    padding:  0 0 0 0px;
-}
+    .infoContatoTop ul {
+        display: flex;
+        flex-direction: row;
+
+        gap: 0.8em;
+    }
+
+    .infoContatoTop ul li:first-child {
+        background: none;
+        padding: 0 0 0 0em;
+    }
+
+    .infoRedesSociais ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1em;
+    }
+
+    .navegacao {
+        margin-bottom: 1em;
+    }
+
+    /* Área do Banner */
+    /* Área do Conteúdo */
+    /* Área do Cliente */
+    .logoClientes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.5;
+        margin: 1em 0;
+    }
+
+    .logoClientes li {
+        width: 90%;
+    }
+
+    .logoClientes li img {
+        width: 100%;
+    }
+
+    /* Área do Rodapé */
+
+    .infoGeralContato {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 1em 0;
+    }
+
+    .endereco {
+        background: none;
+        background-size: contain;
+        padding: 0 0 0 0px;
+    }
 
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
     /* Área do TOPO */
-/* Área do Banner */
-/* Área do Conteúdo */
-/* Área do Cliente */
-/* Área do Rodapé */
- }
+    /* Área do Banner */
+    /* Área do Conteúdo */
+    /* Área do Cliente */
+    /* Área do Rodapé */
+}
+
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
     /* Área do TOPO */
-/* Área do Banner */
-/* Área do Conteúdo */
-/* Área do Cliente */
-/* Área do Rodapé */
- }
+    /* Área do Banner */
+    /* Área do Conteúdo */
+    /* Área do Cliente */
+    /* Área do Rodapé */
+}
+
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { }
-
-
+@media (min-width: 1200px) {}
